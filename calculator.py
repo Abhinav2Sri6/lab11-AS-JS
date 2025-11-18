@@ -4,7 +4,7 @@
 
 import math
 
-# Partner 1's functions
+# Partner 1's functions (keep the good versions)
 def square_root(a):
     if a < 0:
         raise ValueError("Cannot take square root of negative number")
@@ -13,7 +13,7 @@ def square_root(a):
 def hypotenuse(a, b):
     return math.hypot(a, b)
 
-# Partner 2's functions
+# Partner 2's functions (your correct versions)
 def add(a, b):
     return a + b
 
@@ -29,10 +29,8 @@ def div(a, b):
     return b / a
 
 def log(a, b):
-    if a <= 0:
+    if a <= 0 or a == 1:
         raise ValueError("Logarithm base must be positive and not equal to 1")
-    if a == 1:
-        raise ValueError("Logarithm base cannot be 1")
     if b <= 0:
         raise ValueError("Logarithm argument must be positive")
     return math.log(b, a)
