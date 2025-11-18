@@ -1,18 +1,16 @@
-"""
-calculator.py
-- Defines functions used to create a simple calculator
+# https://github.com/Abhinav2Sri6/lab11-AS-JS
+# Partner 1: Abhinav Sriram
+# Partner 2: Jayson Sandy
 
-One function per operation, in order.
-"""
 import math
 
 def square_root(a):
     if a < 0:
-        raise ValueError
+        raise ValueError("Cannot take square root of negative number")
     return math.sqrt(a)
 
-def hypot(a,b):
-    return math.hypot(a,b)
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 
 def add(a, b):
     return a + b
@@ -37,7 +35,3 @@ def log(a, b):
 
 def exp(a, b):
     return a ** b
-
-
-
-
